@@ -21,6 +21,7 @@ header h1{
     color: #fce138;
     margin: 0;
     display: inline;
+    padding: 10px;
 }
 
 header a {
@@ -30,7 +31,7 @@ header a {
 
 header nav {
     float: right;
-    margin: 7px 0;
+    margin: 10px 0;
 }
 
 header nav ul li {
@@ -38,7 +39,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    margin: 0px;
+    margin: 15px;
     font-weight: lighter;
     font-size: 22px;
 }
@@ -259,5 +260,3 @@ section {
     font-size: 17px;
     line-height: 1.3;
   }
-
-
