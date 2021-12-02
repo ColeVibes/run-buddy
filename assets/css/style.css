@@ -21,6 +21,7 @@ header h1{
     color: #fce138;
     margin: 0;
     display: inline;
+    padding: 10px;
 }
 
 header a {
