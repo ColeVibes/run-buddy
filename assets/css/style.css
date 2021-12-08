@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
 }
 
-.header{
+header{
     padding: 20px 35 px;
     background-color: #39a6b2;
     display: flex;
@@ -17,7 +17,7 @@
     flex-wrap: wrap;
 }
 
-.header h1{
+header h1{
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -25,16 +25,16 @@
     padding: 10px;
 }
 
-.header a {
+header a {
     text-decoration: none;
     color: #fce138;
 }
 
-.header nav {
+header nav {
     margin: 10px 0;
 }
 
-.header nav ul {
+header nav ul {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -42,13 +42,13 @@
    list-style: none;
 }
 
-.header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
 
-.footer {
+footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
@@ -57,18 +57,18 @@
     flex-wrap: wrap;
 }
 
-.footer h2{
+footer h2{
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
-.footer div{
+footer div{
     line-height: 1.5;
     text-align: right;
 }
 
-.footer a {
+footer a {
     color: #024e76;
 }
 
@@ -358,15 +358,70 @@
     .hero-cta {
         text-align: center;
     }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
 
 }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .steps {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
  
 }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 90%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
 
 }
